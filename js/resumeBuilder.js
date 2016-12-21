@@ -124,8 +124,10 @@ work.display = function() {
         var formattedEmployerTitle = formattedEmployer + formattedTitle;
         var formattedDate = HTMLworkDates.replace("%data%", entry.dates);
         var formattedDescription = HTMLworkDescription.replace("%data%", entry.description);
+        var formattedLocation = HTMLworkLocation.replace("%data%", entry.location);
 
         $(".work-entry:last").append(formattedEmployerTitle);
+        $(".work-entry:last").append(formattedLocation);
         $(".work-entry:last").append(formattedDate);
         $(".work-entry:last").append(formattedDescription);
     });
