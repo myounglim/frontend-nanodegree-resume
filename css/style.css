@@ -11,7 +11,9 @@ h5,
 h6 {
   padding:0;
   margin:0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .clear-fix {
@@ -80,7 +82,8 @@ h5 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: normal;
   color: #333;
   line-height: 21px;
 }
@@ -112,6 +115,10 @@ a {
   color: #f5ae23;
 }
 
+.blue-text {
+  color: #039be5;
+}
+
 .white-text {
   font-weight: bold;
   color: #fff;
@@ -127,9 +134,8 @@ a {
   background-color: #4a4a4a;
 }
 
-/* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #607d8b;
 }
 
 .flex-box {
@@ -175,6 +181,24 @@ span {
   text-align: center;
 }
 
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-text {
+  width: 100%;
+}
+
+.project-entry {
+  width: 40%;
+}
+
+.project-image {
+  width: 60%;
+  height: 375px;
+}
+
 /* Media queries to handle various device widths */
 
 @media only screen and (max-width: 1024px) {
@@ -186,6 +210,10 @@ span {
 @media only screen and (max-width:900px) {
   .biopic {
     width: 175px;
+  }
+
+  .project-entry {
+    width: 90%;
   }
 }
 
