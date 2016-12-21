@@ -14,7 +14,7 @@ var bio = {
     "welcomeMessage": "I am still learning",
     "skills": ["C++", "Java", "Problem Solving", "Web Development"],
     "biopic": "images/robin.png",
-}
+};
 
 bio.display = function() {
     var formattedName = HTMLheaderName.replace("%data%", bio.name);
@@ -22,7 +22,7 @@ bio.display = function() {
     var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
     var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
     var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
-    var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+    //var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
     var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
     var formattedPicture = HTMLbioPic.replace("%data%", bio.biopic);
     var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
@@ -49,7 +49,7 @@ bio.display = function() {
             $("#skills").append(formattedSkills);
         }
     }
-}
+};
 
 bio.display();
 
@@ -68,7 +68,7 @@ var education = {
         "dates": "2016",
         "url": "https://www.udacity.com/course/ud804"
     }]
-}
+};
 
 education.display = function() {
     education.schools.forEach(function(entry) {
@@ -103,7 +103,7 @@ education.display = function() {
             $(".education-entry:last").children("a").attr("href", entry.url);
         });
     }
-}
+};
 education.display();
 
 var work = {
@@ -114,7 +114,7 @@ var work = {
         "dates": "2014 - 2015",
         "description": "Took orders and had various responsibilities around the store"
     }]
-}
+};
 
 work.display = function() {
     work.jobs.forEach(function(entry) {
@@ -129,7 +129,7 @@ work.display = function() {
         $(".work-entry:last").append(formattedDate);
         $(".work-entry:last").append(formattedDescription);
     });
-}
+};
 work.display();
 
 var projects = {
@@ -150,7 +150,7 @@ var projects = {
         ],
         "url": "https://github.com/myounglim/ViterbiScheduling"
     }]
-}
+};
 
 projects.display = function() {
     projects.projects.forEach(function(entry) {
@@ -173,7 +173,7 @@ projects.display = function() {
             }
         }
     });
-}
+};
 projects.display();
 
 //$("#main").append(internationalizeButton);
